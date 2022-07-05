@@ -10,3 +10,11 @@
 	{{ else }}
 	{{.Site.Home.Date.Year}} {{.Site.Title}}
 	{{ end }}
+
+<br>
+<a href="https://beian.miit.gov.cn/" target="_blank">{{ .Site.Params.Icp }}</a>
+<br>
+<span>
+	<img src="/images/gongan.png">
+	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{ .Site.Params.Gongan_id }}" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" target="_blank">{{ .Site.Params.Gongan }}</a>
+</span>
